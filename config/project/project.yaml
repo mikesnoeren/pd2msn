@@ -1,4 +1,4 @@
-dateModified: 1641589116
+dateModified: 1641590754
 email:
   fromEmail: $SITE_EMAIL
   fromName: $SITE_NAME
@@ -16,7 +16,6 @@ meta:
     5f8ef687-1fd6-4714-9fe5-0e0f7900dcaf: Main # Main
     6bb82573-3aa5-4763-b4ca-603601dce3d2: Global # Global
     6e6e5ab5-ec46-433d-80af-42840709af85: Common # Common
-    8ada0e08-6502-434a-b7ff-c252b73ca0df: German # German
     051d5b55-8d14-441c-9e97-81e02250c265: Custom # Custom
     53d85414-54dd-4826-93f5-7de22f9bde8c: Entry # Entry
     67f102fe-cbe0-438a-8e71-e1f062609695: Entry # Entry

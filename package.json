@@ -1,5 +1,5 @@
 {
-    "name": "craft-boilerplate",
+    "name": "pd2msn",
     "version": "1.0.0",
     "scripts": {
         "watch:css": "cross-env TAILWIND_MODE=watch postcss src/css/style.css -o web/dist/style.css -w",
