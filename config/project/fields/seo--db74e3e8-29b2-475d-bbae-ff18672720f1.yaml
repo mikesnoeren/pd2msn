@@ -1,0 +1,46 @@
+columnSuffix: xicqkdxc
+contentColumnType: text
+fieldGroup: 6e6e5ab5-ec46-433d-80af-42840709af85 # Common
+handle: seo
+instructions: ''
+name: SEO
+searchable: false
+settings:
+  description: ''
+  hideSocial: ''
+  robots:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  socialImage: ''
+  suffixAsPrefix: null
+  title:
+    -
+      __assoc__:
+        -
+          - key
+          - '1'
+        -
+          - locked
+          - '0'
+        -
+          - template
+          - '{title}'
+    -
+      __assoc__:
+        -
+          - key
+          - '2'
+        -
+          - locked
+          - '1'
+        -
+          - template
+          - ' - {{ currentSite.group.name }}'
+  titleSuffix: null
+translationKeyFormat: null
+translationMethod: site
+type: ether\seo\fields\SeoField

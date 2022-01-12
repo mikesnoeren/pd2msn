@@ -1,0 +1,17 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: Home
+propagationMethod: all
+siteSettings:
+  4d8ac26f-0eed-4e84-8f0f-fb59450142e3: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: __home__
+  f5399107-84c7-4af5-8764-8c333d1b9ebc: # Dutch
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: __home__
+type: single

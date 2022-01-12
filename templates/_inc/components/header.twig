@@ -1,0 +1,37 @@
+{% set linkStyles = 'text-base font-medium text-white hover:text-slate-200' %}
+
+<header class="bg-slate-900">
+    <nav class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" aria-label="Top">
+        <div class="flex justify-between items-center py-6 w-full border-b border-slate-500 lg:border-none">
+            <div class="flex items-center">
+                <a href="#">{% include '_inc/helpers/logo.twig' %}
+                </a>
+                <div class="hidden ml-10 space-x-8 lg:block">
+                    {% for item in navigation.mainMenu.all() %}
+                        <a href="{{ item.url() }}" class="{{ linkStyles }}">
+                            {{ item.title }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="ml-10 space-x-4">
+                {% include '_inc/helpers/button/primary.twig' with {
+                    href: craft.entries.section('blogOverview').one.url(),
+                    text: craft.entries.section('blogOverview').one.title,
+                } %}
+
+                {% include '_inc/helpers/button/primary-inverted.twig' with {
+                    href: craft.entries.section('contact').one.url(),
+                    text: craft.entries.section('contact').one.title,
+                } %}
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-center py-4 space-x-6 lg:hidden">
+            {% for item in navigation.mainMenu.all() %}
+                <a href="{{ item.url() }}" class="{{ linkStyles }}">
+                    {{ item.title }}
+                </a>
+            {% endfor %}
+        </div>
+    </nav>
+</header>
