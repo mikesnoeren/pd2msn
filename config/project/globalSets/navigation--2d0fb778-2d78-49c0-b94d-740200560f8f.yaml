@@ -11,11 +11,7 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
-        name: 'Main Menu'
-        sortOrder: 1
-      -
-        elements:
+            width: 50
           -
             fieldUid: f2e5c428-680b-4d82-810b-a0d5e1ead17f # Footer Menu
             instructions: null
@@ -24,9 +20,9 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
-        name: 'Footer Menu'
-        sortOrder: 2
-handle: menu
-name: Menu
+            width: 50
+        name: Menu
+        sortOrder: 1
+handle: navigation
+name: Navigation
 sortOrder: 1

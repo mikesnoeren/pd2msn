@@ -15,12 +15,11 @@
             }
         </style>
     </head>
-    <body class="bg-gray-100">
-        <div class="max-w-[2560px] mx-auto px-2 bg-white">
-            <header>
-                {% block header %}
-                {% endblock %}
-            </header>
+    <body class="bg-slate-800">
+        <div class="max-w-[2560px] mx-auto bg-white">
+            {% block header %}
+                {% include '_inc/components/header.twig' %}
+            {% endblock %}
 
             <main>
                 {% block main %}

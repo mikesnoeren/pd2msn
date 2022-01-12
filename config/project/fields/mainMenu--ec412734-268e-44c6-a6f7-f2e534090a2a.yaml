@@ -6,11 +6,16 @@ instructions: ''
 name: 'Main Menu'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_mainmenu}}'
-  maxBlocks: ''
-  minBlocks: ''
-  propagationKeyFormat: null
-  propagationMethod: none
+  allowSelfRelations: false
+  limit: '5'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Matrix
+type: craft\fields\Entries

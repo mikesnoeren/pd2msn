@@ -1,5 +1,5 @@
 fieldLayouts:
-  ed0618ae-16b1-40e7-b501-f1c7feb9e0a4:
+  541134c4-68e5-4154-923a-9348390152ba:
     tabs:
       -
         elements:
@@ -23,18 +23,29 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
-handle: main
-hasUrls: true
-name: Main
-settings:
-  path: '@webroot/upload/main'
+      -
+        elements:
+          -
+            fieldUid: db74e3e8-29b2-475d-bbae-ff18672720f1 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 2
+handle: blogOverview
+hasTitleField: true
+name: 'Blog Overview'
+section: dcab3086-dee3-497f-9073-49908ef6d388 # Blog Overview
 sortOrder: 1
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-type: craft\volumes\Local
-url: '@web/upload/main/'
