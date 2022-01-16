@@ -26,10 +26,9 @@
                 {% endblock %}
             </main>
 
-            <footer>
-                {% block footer %}
-                {% endblock %}
-            </footer>
+            {% block footer %}
+                {% include '_inc/components/footer.twig' %}
+            {% endblock %}
         </div>
 
         <script src="/dist/app.js"></script>
