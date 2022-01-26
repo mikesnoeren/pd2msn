@@ -6,11 +6,16 @@ instructions: ''
 name: 'Footer Menu'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_footermenu}}'
-  maxBlocks: ''
-  minBlocks: ''
-  propagationKeyFormat: null
-  propagationMethod: none
+  allowSelfRelations: false
+  limit: '8'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Matrix
+type: craft\fields\Entries
