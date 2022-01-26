@@ -4,7 +4,8 @@
     <nav class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" aria-label="Top">
         <div class="flex justify-between items-center py-6 w-full border-b border-slate-500 lg:border-none">
             <div class="flex items-center">
-                <a href="#">{% include '_inc/helpers/logo.twig' %}
+                <a href="#">
+                    {% include '_inc/helpers/logo.twig' %}
                 </a>
                 <div class="hidden ml-10 space-x-8 lg:block">
                     {% for item in navigation.mainMenu.all() %}
