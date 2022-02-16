@@ -1,18 +1,24 @@
-dateModified: 1642289487
+dateModified: 1645004224
 email:
-  fromEmail: $SITE_EMAIL
+  fromEmail: $EMAIL
   fromName: $SITE_NAME
-  replyToEmail: $SITE_EMAIL
+  replyToEmail: $EMAIL
   template: null
   transportSettings:
-    command: ''
-  transportType: craft\mail\transportadapters\Sendmail
+    encryptionMethod: $SMTP_ENCRYPTION
+    host: $SMTP_HOST
+    password: ''
+    port: $SMTP_PORT
+    timeout: '10'
+    useAuthentication: $SMTP_AUTHENTICATION
+    username: ''
+  transportType: craft\mail\transportadapters\Smtp
 meta:
   __names__:
     1fa133fd-47b8-4acc-857d-b9677a729349: Pages # Pages
     2d0fb778-2d78-49c0-b94d-740200560f8f: Navigation # Navigation
     4c265acc-11f0-466c-81c1-c43c5cfa3eb9: Entry # Entry
-    4d8ac26f-0eed-4e84-8f0f-fb59450142e3: English # English
+    4d8ac26f-0eed-4e84-8f0f-fb59450142e3: $SITE_NAME_EN # $SITE_NAME_EN
     5a91ab6b-5698-4382-8d79-9b7c950b67f4: 'Public Schema' # Public Schema
     005e684f-7b7c-4ad0-9833-7c86852558f7: Custom # Custom
     5f8ef687-1fd6-4714-9fe5-0e0f7900dcaf: Main # Main
@@ -43,7 +49,7 @@ meta:
     f1b92217-9f3d-4b80-b798-a6f08ef1189a: Blog # Blog
     f2e5c428-680b-4d82-810b-a0d5e1ead17f: 'Footer Menu' # Footer Menu
     f4e1bac5-a983-4505-91d2-5a26971ad491: 'Passive Title' # Passive Title
-    f5399107-84c7-4af5-8764-8c333d1b9ebc: Dutch # Dutch
+    f5399107-84c7-4af5-8764-8c333d1b9ebc: $SITE_NAME_NL # $SITE_NAME_NL
     fd05975e-1963-4ddd-8f7b-57678dbe0ac6: $SITE_NAME # $SITE_NAME
 plugins:
   express-forms:
