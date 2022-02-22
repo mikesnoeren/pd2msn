@@ -5,30 +5,21 @@ This repository is based on the mikesnoeren/craft repository, which is an Craft 
 
 **Please keep in mind:** This repository makes use of [TailwindUI](https://tailwindui.com/) which requires a paid licensed to use.
 
-Below is the entire intact, unmodified README.md from mikesnoeren/craft
+## Using mikesnoeren/pd2msn
+The setup assumes you use [Lando](https://github.com/lando/lando), if you you use an alternative development environment please change the steps below accordingly.
 
+### Copy the repository:
+```bash
+git clone https://github.com/mikesnoeren/pd2msn.git my-project
+``` 
 
-# About mikesnoeren/craft
+### Run it:
+```bash
+lando start && lando npm run watch
+```
 
-This repository was created to provide an easy starting point for your new [Craft CMS 3](https://github.com/craftcms/cms) projects.
-
-Please be aware that this project is very opinionated; it expects you to mostly be using [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) and [Alpine.js](https://github.com/alpinejs/alpine) for the frontend. 
-If you do require custom JavaScript or CSS, it will be bundled, transformed and minified using [esbuild](https://github.com/evanw/esbuild) and [PostCSS](https://github.com/postcss/postcss).
-
-## Using mikesnoeren/craft
-The setup assumes you use [Nitro](https://github.com/craftcms/nitro), if you you use an alternative development environment please change the steps below accordingly.
-
-Copy the repository: <br>
-```git clone https://github.com/mikesnoeren/craft.git my-project``` 
-
-Install dependencies: <br>
-```composer install && npm install```
-
-Setup Nitro: <br>
-```nitro add```
-
-Build the project: <br>
-```npm run build```
-
-Start developing: <br>
-```npm run watch```
+### Sync `node_modules` & `vendor` from container to host:
+```bash
+docker cp pd2msn_appserver_1:/app/vendor . && \
+docker cp pd2msn_node_1:/app/node_modules .
+```

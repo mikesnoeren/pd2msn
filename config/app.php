@@ -24,5 +24,25 @@ return [
     'modules' => [
         'my-module' => \modules\Module::class,
     ],
+    'components' => [
+        'mailer' => function () {
+            $settings = craft\helpers\App::mailSettings();
+
+            if (!empty(App::env('SMTP_HOST'))) {
+                $settings->transportType = craft\mail\transportadapters\Smtp::class;
+                $settings->transportSettings = [
+                    'host'              => App::env('SMTP_HOST'),
+                    'port'              => App::env('SMTP_PORT'),
+                    'useAuthentication' => App::env('SMTP_AUTHENTICATION'),
+                    'username'          => App::env('SMTP_USERNAME'),
+                    'password'          => App::env('SMTP_PASSWORD'),
+                    'encryptionMethod'  => App::env('SMTP_ENCRYPTION'),
+                ];
+            }
+
+            $config = craft\helpers\App::mailerConfig($settings);
+            return Craft::createObject($config);
+        }
+    ],
     //'bootstrap' => ['my-module'],
 ];
