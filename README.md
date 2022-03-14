@@ -3,8 +3,9 @@ The official PD2MSN repository.
 
 This repository is based on the mikesnoeren/craft repository, which is an Craft CMS 3 scaffolding project using Tailwind and Alpine. 
 
-**Please keep in mind:** This repository makes use of [TailwindUI](https://tailwindui.com/) which requires a paid licensed to use.
-
+**Please keep the following in mind:**
+- This repository has [no license](https://choosealicense.com/no-permission/), which means the work is under exclusive copyright. Nobody can copy, distribute, or modify my work without being at risk of take-downs, shake-downs, or litigation.
+- This repository makes use of [TailwindUI](https://tailwindui.com/) which requires a paid licensed to use.
 ## Using mikesnoeren/pd2msn
 The setup assumes you use [Lando](https://github.com/lando/lando), if you you use an alternative development environment please change the steps below accordingly.
 
