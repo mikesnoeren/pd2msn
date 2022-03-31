@@ -16,13 +16,16 @@
   "autoload": {
     "psr-4": {
       "modules\\": "modules/"
-    }
+    },
+    "files": [
+      "config/kint/kint.php"
+    ]
   },
   "config": {
     "sort-packages": true,
     "optimize-autoloader": true,
     "platform": {
-      "php": "8"
+      "php": "8.1"
     },
     "allow-plugins": {
       "craftcms/plugin-installer": true,
