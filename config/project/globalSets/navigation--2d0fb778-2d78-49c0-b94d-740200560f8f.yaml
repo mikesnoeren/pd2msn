@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: ec412734-268e-44c6-a6f7-f2e534090a2a # Main Menu
+            fieldUid: ec412734-268e-44c6-a6f7-f2e534090a2a
             instructions: null
             label: null
             required: false
@@ -13,7 +13,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: f2e5c428-680b-4d82-810b-a0d5e1ead17f # Footer Menu
+            fieldUid: f2e5c428-680b-4d82-810b-a0d5e1ead17f
             instructions: null
             label: null
             required: false

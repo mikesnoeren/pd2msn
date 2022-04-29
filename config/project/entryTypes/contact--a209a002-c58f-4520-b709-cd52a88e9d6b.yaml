@@ -1,5 +1,5 @@
 fieldLayouts:
-  0baf945c-3698-4b74-9c0d-4c9ef739a6ec:
+  c362e989-1d89-4904-b246-aa142e0d248c:
     tabs:
       -
         elements:
@@ -44,7 +44,7 @@ fieldLayouts:
 handle: contact
 hasTitleField: true
 name: Contact
-section: 3306e5be-ccfc-4d7d-9390-381647684124 # Contact
+section: 7043c508-fdf8-4bf1-a9d9-cdfa67ca6cc2 # Contact
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
