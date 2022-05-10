@@ -22,12 +22,12 @@
     {% endapply %}
 
     <body class="bg-slate-800">
-        <div class="max-w-[2560px] mx-auto">
+        <div class="max-w-[1920px] mx-auto bg-slate-900">
             {% block header %}
                 {% include '_inc/components/header.twig' %}
             {% endblock %}
 
-            <main class="bg-slate-900">
+            <main class="p-4 mx-auto max-w-7xl sm:p-6 lg:p-8">
                 {% block main %}
                 {% endblock %}
             </main>
