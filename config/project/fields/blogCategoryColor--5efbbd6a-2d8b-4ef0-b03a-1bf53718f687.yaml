@@ -1,0 +1,79 @@
+columnSuffix: ayvjetxk
+contentColumnType: string
+fieldGroup: 7e985e9f-e680-483b-8355-eaa0ffe93374 # Blog
+handle: blogCategoryColor
+instructions: ''
+name: 'Blog Category Color'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Red
+        -
+          - value
+          - red
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Orange
+        -
+          - value
+          - orange
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Green
+        -
+          - value
+          - green
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Blue
+        -
+          - value
+          - blue
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Purple
+        -
+          - value
+          - purple
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Pink
+        -
+          - value
+          - pink
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

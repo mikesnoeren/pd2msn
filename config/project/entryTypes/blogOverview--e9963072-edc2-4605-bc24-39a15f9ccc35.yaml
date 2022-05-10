@@ -1,5 +1,5 @@
 fieldLayouts:
-  ea9adbc1-ff18-4c5f-a706-8f57981df4f3:
+  083ce270-97f8-4d12-910d-8beeb83aa17e:
     tabs:
       -
         elements:
@@ -41,11 +41,11 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: blog
+handle: blogOverview
 hasTitleField: true
-name: Blog
-section: f1b92217-9f3d-4b80-b798-a6f08ef1189a # Blog
+name: 'Blog Overview'
+section: 9e3d67ef-15cc-4352-b1c0-1f9a84b0f10d # Blog Overview
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

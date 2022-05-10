@@ -1,4 +1,4 @@
-dateModified: 1645016782
+dateModified: 1652085087
 email:
   fromEmail: $EMAIL
   fromName: $SITE_NAME
@@ -9,18 +9,21 @@ email:
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    1c008561-0013-4b4d-b04a-f51a038c5a20: Blog # Blog
     1fa133fd-47b8-4acc-857d-b9677a729349: Pages # Pages
     2d0fb778-2d78-49c0-b94d-740200560f8f: Navigation # Navigation
     4c265acc-11f0-466c-81c1-c43c5cfa3eb9: Entry # Entry
     4d8ac26f-0eed-4e84-8f0f-fb59450142e3: $SITE_NAME_EN # $SITE_NAME_EN
     5a91ab6b-5698-4382-8d79-9b7c950b67f4: 'Public Schema' # Public Schema
     005e684f-7b7c-4ad0-9833-7c86852558f7: Custom # Custom
+    5efbbd6a-2d8b-4ef0-b03a-1bf53718f687: 'Blog Category Color' # Blog Category Color
     5f8ef687-1fd6-4714-9fe5-0e0f7900dcaf: Main # Main
     6bb82573-3aa5-4763-b4ca-603601dce3d2: Global # Global
     6e6e5ab5-ec46-433d-80af-42840709af85: Common # Common
+    7e985e9f-e680-483b-8355-eaa0ffe93374: Blog # Blog
+    9e3d67ef-15cc-4352-b1c0-1f9a84b0f10d: 'Blog Overview' # Blog Overview
     051d5b55-8d14-441c-9e97-81e02250c265: Custom # Custom
     53d85414-54dd-4826-93f5-7de22f9bde8c: Entry # Entry
-    60fb56ee-fa6f-443d-8088-873fd62c3706: 'Blog Overview' # Blog Overview
     67f102fe-cbe0-438a-8e71-e1f062609695: Entry # Entry
     75d9dd9c-34cd-4041-8eaa-6de7733332b6: 'Custom Title' # Custom Title
     76f56d28-6f60-4b6a-97dd-6f07b22ac710: Passive # Passive
@@ -28,36 +31,33 @@ meta:
     447b1110-2c9a-4975-80e5-fcde89668553: 'Passive Title' # Passive Title
     541a135e-c132-4a7f-b2ef-9869b60caba3: 'Blog Categories' # Blog Categories
     796b6a3e-2cbd-4359-8c33-3c5411a4112c: 'Custom URL' # Custom URL
-    796edc01-1b41-4583-b2a9-6de0e3015cd1: Blog # Blog
-    3306e5be-ccfc-4d7d-9390-381647684124: Contact # Contact
     4873fd21-756a-4934-ac48-7b6f5d2d0087: Pages # Pages
+    7043c508-fdf8-4bf1-a9d9-cdfa67ca6cc2: Contact # Contact
     15174f4c-d3be-48dc-900e-91442b621f06: Entry # Entry
     a57a7266-7418-4d78-af8e-3a3950389f39: Home # Home
+    a209a002-c58f-4520-b709-cd52a88e9d6b: Contact # Contact
     c3ab0099-2bd0-4fb3-9f99-0b7ef05a796d: 'Custom URL' # Custom URL
-    c5553e55-028a-4698-ab75-22816d070c93: Contact # Contact
     cfa92a12-d5a1-41d8-b55e-8678206d6977: Passive # Passive
     db74e3e8-29b2-475d-bbae-ff18672720f1: SEO # SEO
-    dcab3086-dee3-497f-9073-49908ef6d388: 'Blog Overview' # Blog Overview
+    e9963072-edc2-4605-bc24-39a15f9ccc35: 'Blog Overview' # Blog Overview
     ebf5391a-5427-4f9f-ad74-cf0abc48ad23: 'Custom Title' # Custom Title
-    ec412734-268e-44c6-a6f7-f2e534090a2a: 'Main Menu' # Main Menu
-    f1b92217-9f3d-4b80-b798-a6f08ef1189a: Blog # Blog
-    f2e5c428-680b-4d82-810b-a0d5e1ead17f: 'Footer Menu' # Footer Menu
+    f3c09b26-065d-4c42-b4a6-2665764ec9fa: Default # Default
     f4e1bac5-a983-4505-91d2-5a26971ad491: 'Passive Title' # Passive Title
     f5399107-84c7-4af5-8764-8c333d1b9ebc: $SITE_NAME_NL # $SITE_NAME_NL
     fd05975e-1963-4ddd-8f7b-57678dbe0ac6: $SITE_NAME # $SITE_NAME
 plugins:
+  dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  elements-panel:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   express-forms:
     edition: lite
     enabled: true
     schemaVersion: 1.0.1
-  field-manager:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  kint:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   seo:
     edition: standard
     enabled: true
@@ -112,7 +112,7 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: null
-  schemaVersion: 3.7.8
+  schemaVersion: 3.7.33
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
