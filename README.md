@@ -1,7 +1,7 @@
 # PD2MSN
 The official PD2MSN repository.
 
-This repository is based on the mikesnoeren/craft repository, which is an Craft CMS 3 scaffolding project using Tailwind and Alpine. 
+This repository is based on the mikesnoeren/craft repository, which is an Craft CMS 4 scaffolding project using Tailwind and Alpine. 
 
 **Please keep the following in mind:**
 - This repository has [no license](https://choosealicense.com/no-permission/), which means the work is under exclusive copyright. Nobody can copy, distribute, or modify my work without being at risk of take-downs, shake-downs, or litigation.
