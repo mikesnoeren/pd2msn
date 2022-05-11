@@ -1,19 +1,55 @@
-dateModified: 1652085087
+dateModified: 1652287787
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      key: 'section:1fa133fd-47b8-4acc-857d-b9677a729349' # Pages
+      type: native
+    -
+      key: 'section:1c008561-0013-4b4d-b04a-f51a038c5a20' # Blog
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: ''
+      type: heading
 email:
-  fromEmail: $EMAIL
-  fromName: $SITE_NAME
-  replyToEmail: $EMAIL
+  fromEmail: $CRAFT_EMAIL
+  fromName: $CRAFT_SITE_NAME
+  replyToEmail: $CRAFT_EMAIL
   template: null
   transportSettings:
     command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  main:
+    hasUrls: true
+    name: Main
+    settings:
+      path: '@assets_path'
+    type: craft\fs\Local
+    url: '@assets_base'
 meta:
   __names__:
     1c008561-0013-4b4d-b04a-f51a038c5a20: Blog # Blog
     1fa133fd-47b8-4acc-857d-b9677a729349: Pages # Pages
     2d0fb778-2d78-49c0-b94d-740200560f8f: Navigation # Navigation
     4c265acc-11f0-466c-81c1-c43c5cfa3eb9: Entry # Entry
-    4d8ac26f-0eed-4e84-8f0f-fb59450142e3: $SITE_NAME_EN # $SITE_NAME_EN
+    4d8ac26f-0eed-4e84-8f0f-fb59450142e3: English # English
     5a91ab6b-5698-4382-8d79-9b7c950b67f4: 'Public Schema' # Public Schema
     005e684f-7b7c-4ad0-9833-7c86852558f7: Custom # Custom
     5efbbd6a-2d8b-4ef0-b03a-1bf53718f687: 'Blog Category Color' # Blog Category Color
@@ -43,8 +79,8 @@ meta:
     ebf5391a-5427-4f9f-ad74-cf0abc48ad23: 'Custom Title' # Custom Title
     f3c09b26-065d-4c42-b4a6-2665764ec9fa: Default # Default
     f4e1bac5-a983-4505-91d2-5a26971ad491: 'Passive Title' # Passive Title
-    f5399107-84c7-4af5-8764-8c333d1b9ebc: $SITE_NAME_NL # $SITE_NAME_NL
-    fd05975e-1963-4ddd-8f7b-57678dbe0ac6: $SITE_NAME # $SITE_NAME
+    f5399107-84c7-4af5-8764-8c333d1b9ebc: Dutch # Dutch
+    fd05975e-1963-4ddd-8f7b-57678dbe0ac6: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
 plugins:
   dumper:
     edition: standard
@@ -54,10 +90,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  express-forms:
-    edition: lite
-    enabled: true
-    schemaVersion: 1.0.1
   seo:
     edition: standard
     enabled: true
@@ -103,19 +135,16 @@ plugins:
               - ' - {{ currentSite.group.name }}'
       titleSuffix: null
       twitterHandle: ''
-  super-table:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.2.1
 system:
   edition: solo
   live: true
-  name: $SITE_NAME
+  name: $CRAFT_SITE_NAME
   retryDuration: null
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null
