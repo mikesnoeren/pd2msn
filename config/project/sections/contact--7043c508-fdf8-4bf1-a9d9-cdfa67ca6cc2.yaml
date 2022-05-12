@@ -8,10 +8,10 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _contact/index.twig
-    uriFormat: contact
+    uriFormat: '{slug}'
   f5399107-84c7-4af5-8764-8c333d1b9ebc: # Dutch
     enabledByDefault: true
     hasUrls: true
     template: _contact/index.twig
-    uriFormat: contact
+    uriFormat: '{slug}'
 type: single

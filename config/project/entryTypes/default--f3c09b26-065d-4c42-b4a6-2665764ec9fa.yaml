@@ -44,7 +44,7 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: 1c008561-0013-4b4d-b04a-f51a038c5a20 # Blog
+section: 1c008561-0013-4b4d-b04a-f51a038c5a20 # Blog - Items
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

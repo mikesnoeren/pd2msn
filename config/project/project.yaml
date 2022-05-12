@@ -1,32 +1,39 @@
-dateModified: 1652376969
+dateModified: 1652379280
 elementSources:
   craft\elements\Entry:
     -
+      disabled: false
       key: '*'
       tableAttributes:
         - section
-        - postDate
-        - expiryDate
+        - dateCreated
+        - dateUpdated
         - link
       type: native
     -
+      disabled: false
       key: singles
       tableAttributes:
+        - dateCreated
+        - dateUpdated
         - link
       type: native
     -
+      disabled: false
       key: 'section:1fa133fd-47b8-4acc-857d-b9677a729349' # Pages
-      type: native
-    -
-      key: 'section:1c008561-0013-4b4d-b04a-f51a038c5a20' # Blog
       tableAttributes:
-        - postDate
-        - expiryDate
+        - dateCreated
+        - dateUpdated
         - link
       type: native
     -
-      heading: ''
-      type: heading
+      disabled: false
+      key: 'section:1c008561-0013-4b4d-b04a-f51a038c5a20' # Blog - Items
+      tableAttributes:
+        - dateCreated
+        - dateUpdated
+        - link
+      type: native
 email:
   fromEmail: $CRAFT_EMAIL
   fromName: $CRAFT_SITE_NAME
@@ -45,7 +52,7 @@ fs:
     url: '@assets_base'
 meta:
   __names__:
-    1c008561-0013-4b4d-b04a-f51a038c5a20: Blog # Blog
+    1c008561-0013-4b4d-b04a-f51a038c5a20: 'Blog - Items' # Blog - Items
     1fa133fd-47b8-4acc-857d-b9677a729349: Pages # Pages
     2d0fb778-2d78-49c0-b94d-740200560f8f: Navigation # Navigation
     4c265acc-11f0-466c-81c1-c43c5cfa3eb9: Entry # Entry
@@ -57,7 +64,7 @@ meta:
     6bb82573-3aa5-4763-b4ca-603601dce3d2: Global # Global
     6e6e5ab5-ec46-433d-80af-42840709af85: Common # Common
     7e985e9f-e680-483b-8355-eaa0ffe93374: Blog # Blog
-    9e3d67ef-15cc-4352-b1c0-1f9a84b0f10d: 'Blog Overview' # Blog Overview
+    9e3d67ef-15cc-4352-b1c0-1f9a84b0f10d: Blog # Blog
     051d5b55-8d14-441c-9e97-81e02250c265: Custom # Custom
     53d85414-54dd-4826-93f5-7de22f9bde8c: Entry # Entry
     67f102fe-cbe0-438a-8e71-e1f062609695: Entry # Entry
@@ -75,7 +82,7 @@ meta:
     c3ab0099-2bd0-4fb3-9f99-0b7ef05a796d: 'Custom URL' # Custom URL
     cfa92a12-d5a1-41d8-b55e-8678206d6977: Passive # Passive
     db74e3e8-29b2-475d-bbae-ff18672720f1: SEO # SEO
-    e9963072-edc2-4605-bc24-39a15f9ccc35: 'Blog Overview' # Blog Overview
+    e9963072-edc2-4605-bc24-39a15f9ccc35: Blog # Blog
     ebf5391a-5427-4f9f-ad74-cf0abc48ad23: 'Custom Title' # Custom Title
     f3c09b26-065d-4c42-b4a6-2665764ec9fa: Default # Default
     f4e1bac5-a983-4505-91d2-5a26971ad491: 'Passive Title' # Passive Title
