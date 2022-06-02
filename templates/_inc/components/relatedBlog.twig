@@ -1,0 +1,11 @@
+{% if items %}
+    <ul class="grid grid-cols-2 gap-4">
+        {% for item in items %}
+            <li>
+                {% include '_blog/item.twig' with {
+                    item: item
+                } %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

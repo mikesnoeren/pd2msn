@@ -4,7 +4,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
-        <link href="/dist/style.css" rel="stylesheet"/>
+        {{ craft.vite.script('src/js/app.js') }}
+
 
         {% hook "seo" %}
         {{ head() }}
@@ -17,8 +18,10 @@
     </head>
 
     {% apply spaceless %}
-        {% set buttonPrimary = 'inline-block px-4 py-2 text-base font-medium rounded-md border border-transparent bg-slate-500 text-slate-200 hover:bg-opacity-75' %}
-        {% set buttonPrimaryInverted = 'inline-block px-4 py-2 text-base font-medium bg-white rounded-md border border-transparent text-slate-600 hover:bg-slate-200' %}
+        {% set buttonBase = 'inline-block px-4 py-2 text-base font-medium rounded-md hover:bg-opacity-75' %}
+        {% set buttonPrimary = "#{buttonBase} bg-slate-500 text-slate-200" %}
+        {% set buttonPrimaryInverted = "#{buttonBase} bg-white text-slate-600" %}
+        {% set filterButtonBase = "block px-4 py-2 text-base text-slate-200 border-l-8 hover:bg-opacity-75" %}
     {% endapply %}
 
     <body class="bg-slate-800">
@@ -27,16 +30,26 @@
                 {% include '_inc/components/header.twig' %}
             {% endblock %}
 
-            <main class="p-4 mx-auto max-w-7xl sm:p-6 lg:p-8">
-                {% block main %}
-                {% endblock %}
+            <main class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="mx-auto my-12 max-w-4xl text-center">
+                    {% for item in entry.banner.all() %}
+                        <h1 class="text-4xl uppercase text-slate-200">{{ item.titel ?? entry.title }}</h1>
+
+                        {% if item.body|length %}
+                            <div class="mt-4 text-xl text-slate-200">{{ item.body }}</div>
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+                <div class="my-6">
+                    {% block main %}
+                    {% endblock %}
+                </div>
             </main>
 
             {% block footer %}
                 {% include '_inc/components/footer.twig' %}
             {% endblock %}
         </div>
-
-        <script src="/dist/app.js"></script>
     </body>
 </html>

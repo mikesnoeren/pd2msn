@@ -25,10 +25,21 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 820a6a9e-fc03-4e5a-baea-a50970939e2c
+            warning: null
+            width: 100
+          -
+            fieldUid: 5efbbd6a-2d8b-4ef0-b03a-1bf53718f687 # Blog Category Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f2c5067c-76c1-4fee-9b0a-58c8627b97c5
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 83ca09db-3144-47ae-9db0-c3ed02d08e2a
 handle: blogCategories
 name: 'Blog Categories'
 siteSettings:

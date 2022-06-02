@@ -24,10 +24,21 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c1807e1b-ca51-46b8-a1bd-df70a2557eea
+            warning: null
+            width: 100
+          -
+            fieldUid: 2b5c3999-f111-4535-8ecd-a81e95483d94 # Blog Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2ee051a-7c82-44b3-a125-9bfc9b78feb7
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: d0e34251-965c-4e68-adb6-6e3821aee376
       -
         elements:
           -
@@ -37,10 +48,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3b835e2e-d029-4932-b2e3-547bd4712d92
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: d9d938d9-f19a-400b-ad0f-79ef99f17837
 handle: default
 hasTitleField: true
 name: Default

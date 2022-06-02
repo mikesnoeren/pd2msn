@@ -1,0 +1,15 @@
+{% if item %}
+    {% set categories = craft.categories.relatedTo(item).all() %}
+
+    <a href="{{ item.url }}" class="block p-6 h-full text-base shadow-lg text-slate-200 bg-slate-800">
+        {% for category in categories %}
+            <span class="text-{{ category.blogCategoryColor }}-500 mr-2">{{ category.title }}</span>
+        {% endfor %}
+
+        <h2 class="mt-2 mb-4 text-4xl">{{ item.title }}</h2>
+        <p>
+            A, ad asperiores debitis, dignissimos doloribus eos est inventore maiores mollitia placeat quis voluptatem. Accusamus asperiores blanditiis dolorum qui, totam vel voluptate.
+            Eliquam ducimus earum ipsum libero maxime natus, praesentium quo, quod sed veniam voluptates. Consectetur cumque dolore enim obcaecati officiis rerum voluptatibus.
+        </p>
+    </a>
+{% endif %}
