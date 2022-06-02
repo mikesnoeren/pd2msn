@@ -1,0 +1,41 @@
+{% if pageInfo is defined and pageInfo.totalPages > 1 %}
+    <nav aria-label="Pagination" class="pagination_wrapper">
+        <ul class="pagination">
+            <li>
+                <a href="{{ pageInfo.firstUrl }}">First Page</a>
+            </li>
+
+            {% if pageInfo.prevUrl %}
+                <li>
+                    <a href="{{ pageInfo.prevUrl }}">Previous Page</a>
+                </li>
+            {% endif %}
+
+            {% for page, url in pageInfo.getPrevUrls(5) %}
+                <li>
+                    <a href="{{ url }}">{{ page }}</a>
+                </li>
+            {% endfor %}
+
+            <li> {# current #}
+                <span>{{ pageInfo.currentPage }}</span>
+            </li>
+
+            {% for page, url in pageInfo.getNextUrls(5) %}
+                <li>
+                    <a href="{{ url }}">{{ page }}</a>
+                </li>
+            {% endfor %}
+
+            {% if pageInfo.nextUrl %}
+                <li>
+                    <a href="{{ pageInfo.nextUrl }}">Next Page</a>
+                </li>
+            {% endif %}
+
+            <li>
+                <a href="{{ pageInfo.lastUrl }}">Last Page</a>
+            </li>
+        </ul>
+    </nav>
+{% endif %}

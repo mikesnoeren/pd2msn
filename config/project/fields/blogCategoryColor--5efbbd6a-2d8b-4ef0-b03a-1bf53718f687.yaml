@@ -2,11 +2,10 @@ columnSuffix: ayvjetxk
 contentColumnType: string
 fieldGroup: 7e985e9f-e680-483b-8355-eaa0ffe93374 # Blog
 handle: blogCategoryColor
-instructions: ''
+instructions: null
 name: 'Blog Category Color'
 searchable: false
 settings:
-  optgroups: true
   options:
     -
       __assoc__:

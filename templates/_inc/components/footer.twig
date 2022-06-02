@@ -1,10 +1,10 @@
-{% set linkStyles = 'text-base font-medium text-white hover:text-slate-400' %}
+{% set linkStyles = 'text-base font-medium text-slate-200 hover:text-slate-400' %}
 
 <footer class="px-4 pt-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
     <div class="py-6 w-full border-t border-slate-500">
         <p class="text-base text-center text-slate-400">
             &copy; {{ now|date('Y') }} {{ craft.app.sites.currentSite.group.name() }} -
-            <a href="https://mikesnoeren.com" target="_blank" class="hover:text-white">A website by Mike Snoeren</a>
+            <a href="https://mikesnoeren.com" target="_blank" class="hover:text-slate-200">A website by Mike Snoeren</a>
         </p>
     </div>
 </footer>

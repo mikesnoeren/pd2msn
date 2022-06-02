@@ -24,10 +24,21 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 011ea606-2c37-4640-a9cd-37c3ca575996
+            warning: null
+            width: 100
+          -
+            fieldUid: 51c27d0d-e6ac-45ab-92e4-4e2eb69766ff # Banner
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6f95828-a081-4fd1-9173-420b03a6f8bb
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: b048d4de-41d9-47ad-9374-760ab9a78651
       -
         elements:
           -
@@ -37,10 +48,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ee5b1470-00e2-4a78-a6fb-5e2908945d57
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 589a361d-0cd7-4a5a-a44a-af18cfbd72a0
 handle: home
 hasTitleField: true
 name: Home

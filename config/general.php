@@ -28,7 +28,7 @@ return [
     'useEmailAsUsername' => true,
     'aliases' => [
         '@web' => App::env('CRAFT_SITE_URL'),
-        '@web_nl' => App::env('CRAFT_SITE_URL') . 'nl/',
+        '@web_nl' => App::env('CRAFT_SITE_URL') . '/nl/',
         '@assets_path' => App::env('CRAFT_ASSET_PATH'),
         '@assets_base' => App::env('CRAFT_SITE_URL') . App::env('CRAFT_ASSET_PATH')
     ],

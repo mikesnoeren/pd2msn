@@ -1,5 +1,51 @@
 {% extends '_layout.twig' %}
 
-{% block main %}
+{#
+This comment is required to generate the right tailwind classes as they are chosen within the CMS.
+red:    bg-red-500 border-red-700 text-red-500
+orange: bg-orange-500 border-orange-700 text-orange-500
+green:  bg-green-500 border-green-700 text-green-500
+blue:   bg-blue-500 border-blue-700 text-blue-500
+purple: bg-purple-500 border-purple-700 text-purple-500
+pink:   bg-pink-500 border-pink-700 text-pink-500
+#}
 
+{% set filterParam = craft.app.request.getParam('category') %}
+{% set allEntries = craft.entries.section('blogItems').all() %}
+{% set relatedCategories = craft.categories.slug(filterParam).all() %}
+{% set items = craft.entries.section('blogItems').relatedTo(relatedCategories).limit(10) %}
+
+{% block main %}
+    <ul class="flex flex-wrap justify-center w-full mb-4">
+        <li class="mr-4 mb-4">
+            <a href="{{ url(entry.url) }}" class="{{ filterButtonBase }} bg-slate-500 text-slate-200 border-slate-700 {{ craft.app.request.absoluteUrl == entry.url ? 'border-b-4 pb-1' }}">
+                All categories
+            </a>
+        </li>
+        {% for item in craft.categories.relatedTo(allEntries).all() %}
+            <li class="mr-4 mb-4">
+                <a href="{{ url(entry.url, {category: item.slug}) }}"
+                   class="{{ filterButtonBase }} bg-{{ item.blogCategoryColor }}-500 border-{{ item.blogCategoryColor }}-700 {{ filterParam == item.slug ? 'border-b-4 pb-1' }}">
+                    {{ item.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {% if items %}
+            {% paginate items as pageInfo, items %}
+
+            {% for item in items %}
+                <li>
+                    {% include '_blog/item.twig' with {
+                        item: item
+                    } %}
+                </li>
+            {% endfor %}
+
+            {% include '_inc/helpers/paginate.twig' with {
+                pageInfo: pageInfo,
+            } %}
+        {% endif %}
+    </ul>
 {% endblock %}

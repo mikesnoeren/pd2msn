@@ -1,5 +1,9 @@
 {% extends '_layout.twig' %}
 
+    {# Misschien gewoon lopende tekst met een lijn er onder? #}
+    {# Beetje dit idee: https://piccalil.li/tutorials/ #}
+
 {% block main %}
 
+    {% include '_inc/components/relatedBlog.twig' with { items: entry.blogRelated.all() ?? false } %}
 {% endblock %}

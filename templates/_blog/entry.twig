@@ -2,4 +2,5 @@
 
 {% block main %}
 
+    {% include '_inc/components/relatedBlog.twig' with { items: entry.blogRelated.all() ?? false } %}
 {% endblock %}
