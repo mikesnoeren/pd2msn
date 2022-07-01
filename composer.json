@@ -4,7 +4,7 @@
         "craftcms/redactor": "3.0.0",
         "ether/seo": "^4.0.0",
         "nystudio107/craft-autocomplete": "^1.0",
-        "nystudio107/craft-vite": "4.0.0",
+        "nystudio107/craft-vite": "4.0.1",
         "putyourlightson/craft-elements-panel": "^2.0.0",
         "studioespresso/craft-dumper": "3.0.1",
         "vlucas/phpdotenv": "^5.4.1"
